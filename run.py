@@ -17,7 +17,6 @@ def make_prediction(idx):
     return np.argmax(pred)
 
 def plot_img(idx):
-    import pdb; pdb.set_trace()
     prediction = make_prediction(idx)
     predicted_label = labels[prediction]
     correct_label = labels[y_test[idx]]
